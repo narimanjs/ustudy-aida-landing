@@ -8,13 +8,13 @@ const IfYouSection: React.FC = () => {
       <div className={styles.content}>
         <div className={styles.ellipseOne}>
           <img
-            src='/public/Ellipse3.png'
+            src='/Ellipse3.png'
             alt='ellipseOne'
           />
         </div>
         <div className={styles.ellipseTwo}>
           <img
-            src='/public/Ellipse2.png'
+            src='/Ellipse2.png'
             alt='ellipseTwo'
           />
         </div>
