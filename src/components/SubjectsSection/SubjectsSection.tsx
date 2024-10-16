@@ -2,7 +2,10 @@ import styles from "./SubjectsSection.module.scss";
 
 const SubjectsSection = () => {
   return (
-    <section className={styles.subjectsSection}>
+    <section
+      className={styles.subjectsSection}
+      id='course'
+    >
       <div className={styles.topSection}>
         <div className={styles.imageWrapper}>
           <img

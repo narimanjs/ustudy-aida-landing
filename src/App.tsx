@@ -8,6 +8,7 @@ import CourseSection from "./components/CourseSection/CourseSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className='app-container'>
@@ -19,6 +20,7 @@ function App() {
       <FutureSection />
       <CourseSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }

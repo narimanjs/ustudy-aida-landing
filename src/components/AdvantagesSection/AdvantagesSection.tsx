@@ -2,7 +2,10 @@ import styles from "./AdvantagesSection.module.scss";
 
 const AdvantagesSection = () => {
   return (
-    <section className={styles.advantagesSection}>
+    <section
+      className={styles.advantagesSection}
+      id='advantages'
+    >
       <h2>Почему Ustudy — лучший выбор для подготовки к ЕНТ?</h2>
       <div className={styles.content}>
         <div className={styles.image}>

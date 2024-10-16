@@ -3,7 +3,10 @@ import Button from "../Button/Button";
 
 const ContactSection = () => {
   return (
-    <section className={styles.contactSection}>
+    <section
+      className={styles.contactSection}
+      id='contacts'
+    >
       <div className={styles.icon}>
         <img
           src='/question-mark.png'
