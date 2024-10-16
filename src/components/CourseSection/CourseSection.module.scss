@@ -1,0 +1,118 @@
+.courseSection {
+  max-width: 1760px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1.5px solid rgba(187, 187, 187, 1);
+  border-radius: 50px;
+  margin-top: 80px;
+  position: relative;
+
+  .imageWrapper {
+    flex: 1;
+    img {
+      margin-top: 130px;
+      width: 771px;
+      height: 730px;
+    }
+  }
+  .flask1 {
+    position: absolute;
+    width: 134.4px;
+    height: 134.4px;
+    top: 256.5px;
+    left: 37px;
+  }
+  .flask2 {
+    position: absolute;
+    width: 128.4px;
+    height: 128.4px;
+    top: 37.5px;
+    left: 620px;
+  }
+  .tube {
+    position: absolute;
+    width: 300.4px;
+    height: 300.4px;
+    top: 514px;
+    left: 1400px;
+  }
+  .microbe {
+    position: absolute;
+    width: 128.4px;
+    height: 128.4px;
+    top: 190px;
+    left: 1580px;
+  }
+  .courseContent {
+    flex: 2;
+    padding-left: 40px;
+
+    h2 {
+      font-family: IBM Plex Sans;
+      font-size: 72px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+
+      margin: 20px 0;
+      li {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43.5px;
+        &:before {
+          content: "•";
+          margin-right: 10px;
+        }
+      }
+    }
+    p {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 36px;
+    }
+
+    .price {
+      font-size: 72px;
+      font-weight: 600;
+
+      .normal {
+        font-weight: 400;
+        font-size: 27px;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+  .contactButton {
+    display: flex;
+    align-items: center;
+
+    button {
+      width: 350px;
+      height: 90px;
+      background-color: #3b46e0;
+      font-family: IBM Plex Sans;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 23.4px;
+      color: white;
+
+      margin-bottom: 40px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

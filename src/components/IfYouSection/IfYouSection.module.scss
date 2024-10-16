@@ -1,0 +1,135 @@
+.ifYouSection {
+  padding: 0px 214px;
+  background-color: #ffffff;
+  max-width: 1492px;
+
+  h2 {
+    position: absolute;
+    top: 1122px;
+
+    font-family: IBM Plex Sans;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 93.6px;
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .image {
+    position: absolute;
+    width: 441px;
+    height: 666.5px;
+    top: 301px;
+    left: 411px;
+    opacity: 1;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .ellipseOne {
+    position: absolute;
+    width: 924.03px;
+    height: 914.4px;
+    background-color: #60dcff;
+    border-radius: 50%;
+    left: 288.76px;
+    top: 200px;
+    z-index: -1;
+    transform: rotate(-57.68deg);
+  }
+
+  .ellipseTwo {
+    position: absolute;
+    width: 982px;
+    height: 977px;
+    background-color: #06222e;
+    border-radius: 50%;
+    top: 144px;
+    left: 130px;
+    z-index: -2;
+  }
+  .bubbles {
+    font-family: IBM Plex Sans;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46.5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+
+    .bubble {
+      position: relative;
+    }
+
+    .bubbleRed {
+      background-color: #ff426e;
+      padding: 30px 20px;
+      top: 355px;
+      left: 49px;
+      color: white;
+      border-radius: 50px;
+      width: 420px;
+      gap: 10px;
+      position: absolute;
+    }
+
+    .bubbleGreen {
+      background-color: #03ff86;
+      padding: 30px 20px;
+      width: 537px;
+      position: absolute;
+      top: 674px;
+      color: black;
+      border-radius: 50px;
+      gap: 10px;
+    }
+
+    .bubbleBlue {
+      background-color: #3b46e0;
+      padding: 30px 20px;
+      top: 248px;
+      left: 848px;
+      color: white;
+      border-radius: 50px;
+      width: 509px;
+      gap: 10px;
+      position: absolute;
+    }
+
+    .bubbleYellow {
+      background-color: #ffff00;
+      padding: 30px 20px;
+      top: 507px;
+      left: 1017px;
+      color: black;
+      border-radius: 50px;
+      width: 481px;
+      gap: 10px;
+      position: absolute;
+    }
+
+    .bubbleOrange {
+      background-color: #f0502d;
+      padding: 30px 20px;
+      top: 797px;
+      left: 926px;
+      color: white;
+      border-radius: 50px;
+      width: 431px;
+      gap: 10px;
+      position: absolute;
+    }
+  }
+}

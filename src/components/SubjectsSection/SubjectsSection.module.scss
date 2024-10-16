@@ -1,0 +1,127 @@
+.subjectsSection {
+  padding: 80px 0;
+
+  .topSection {
+    display: flex;
+    gap: 20px;
+
+    .imageWrapper {
+      flex: 2;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+      }
+
+      .imageText {
+        position: absolute;
+
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        font-size: 48px;
+        font-weight: 500;
+        max-width: 1148px;
+        text-shadow: 0 0 170px rgba(0, 0, 0, 0.8), 0 0 150px rgba(0, 0, 0, 0.6);
+        text-align: right;
+        padding: 20px;
+      }
+    }
+
+    .sideCards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+
+      .card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 100%;
+        background: radial-gradient(
+          circle,
+          rgbargba(6, 34, 46, 1) 0%,
+          rgba(6, 34, 46, 0) 100%
+        );
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 15px;
+        }
+
+        .cardText {
+          position: absolute;
+          bottom: 10px;
+          color: white;
+          font-size: 48px;
+          font-weight: 500;
+          font-family: "IBM Plex Sans", sans-serif;
+          text-shadow: 0 0 170px rgba(0, 0, 0, 1), 0 0 15px rgba(0, 0, 0, 1.6);
+          text-align: center;
+          margin-bottom: 40px;
+          max-width: 467px;
+          background: radial-gradient(
+            circle,
+            rgbargba(6, 34, 46, 1) 0%,
+            rgba(6, 34, 46, 0) 100%
+          );
+        }
+      }
+    }
+  }
+
+  .bottomSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .card {
+      flex: 1;
+      margin-right: 20px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 15px;
+      overflow: hidden;
+      background: radial-gradient(
+        circle,
+        rgbargba(6, 34, 46, 1) 0%,
+        rgba(6, 34, 46, 0) 100%
+      );
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+      }
+
+      .cardText {
+        position: absolute;
+        bottom: 10px;
+        color: white;
+        font-size: 48px;
+        font-weight: 500;
+        font-family: "IBM Plex Sans", sans-serif;
+        text-shadow: 0 0 170px rgba(0, 0, 0, 1), 0 0 15px rgba(0, 0, 0, 1.6);
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 467px;
+        padding: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
