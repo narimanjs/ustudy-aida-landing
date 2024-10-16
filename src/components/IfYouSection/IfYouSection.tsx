@@ -1,27 +1,13 @@
-import React from "react";
 import styles from "./IfYouSection.module.scss";
 
-const IfYouSection: React.FC = () => {
+const IfYouSection = () => {
   return (
     <section className={styles.ifYouSection}>
       <h2>Если ты...</h2>
       <div className={styles.content}>
-        <div className={styles.ellipseOne}>
-          <img
-            src='/Ellipse3.png'
-            alt='ellipseOne'
-          />
-        </div>
-        <div className={styles.ellipseTwo}>
-          <img
-            src='/Ellipse2.png'
-            alt='ellipseTwo'
-          />
-        </div>
-
         <div className={styles.image}>
           <img
-            src='/IfYouSection.png'
+            src='/Frame 511.png'
             alt='Thinking girl'
           />
         </div>

@@ -7,52 +7,57 @@
   border-radius: 50px;
   margin-top: 80px;
   position: relative;
+  overflow: hidden;
 
   .imageWrapper {
     flex: 1;
     img {
       margin-top: 130px;
-      width: 771px;
-      height: 730px;
     }
   }
-  .flask1 {
-    position: absolute;
-    width: 134.4px;
-    height: 134.4px;
-    top: 256.5px;
-    left: 37px;
-  }
-  .flask2 {
-    position: absolute;
-    width: 128.4px;
-    height: 128.4px;
-    top: 37.5px;
-    left: 620px;
-  }
-  .tube {
-    position: absolute;
-    width: 300.4px;
-    height: 300.4px;
-    top: 514px;
-    left: 1400px;
-  }
+  .flask1,
+  .flask2,
+  .tube,
   .microbe {
     position: absolute;
-    width: 128.4px;
-    height: 128.4px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .flask1 {
+    top: 256.5px;
+    left: 37px;
+    max-width: 10%;
+  }
+
+  .flask2 {
+    top: 37.5px;
+    left: 620px;
+    max-width: 10%;
+  }
+
+  .tube {
+    top: 514px;
+    left: 1350px;
+    max-width: 15%;
+  }
+
+  .microbe {
     top: 190px;
-    left: 1580px;
+    left: 1480px;
+    max-width: 10%;
   }
   .courseContent {
     flex: 2;
-    padding-left: 40px;
+    // padding-left: 40px;
 
     h2 {
       font-family: IBM Plex Sans;
       font-size: 72px;
       font-weight: 500;
       margin-bottom: 30px;
+      max-width: 100%;
     }
 
     ul {
