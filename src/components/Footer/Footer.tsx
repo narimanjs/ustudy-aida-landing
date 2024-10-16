@@ -6,7 +6,7 @@ const Footer = () => {
       <div className={styles.leftSection}>
         <div className={styles.logo}>
           <img
-            src='/public/UStudy_footer.png'
+            src='/UStudy_footer.png'
             alt='ustudy logo'
           />
         </div>

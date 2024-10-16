@@ -6,7 +6,7 @@ const CourseSection = () => {
     <section className={styles.courseSection}>
       <span className={styles.flask1}>
         <img
-          src='/public/beaker_5011372 1.png'
+          src='/beaker_5011372 1.png'
           alt='tube'
         />
       </span>
