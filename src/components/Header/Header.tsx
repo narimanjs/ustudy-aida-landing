@@ -5,16 +5,15 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img
-          src='/UStudy.png'
-          alt='ustudy logo'
-        />
+        <a href='/'>
+          <img
+            src='/UStudy.png'
+            alt='ustudy logo'
+          />
+        </a>
       </div>
       <nav className={styles.nav}>
         <ul>
-          <li>
-            <a href='#about'>О нас</a>
-          </li>
           <li>
             <a href='#advantages'>Преимущества</a>
           </li>
