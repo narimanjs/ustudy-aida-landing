@@ -6,8 +6,18 @@ const IfYouSection: React.FC = () => {
     <section className={styles.ifYouSection}>
       <h2>Если ты...</h2>
       <div className={styles.content}>
-        <div className={styles.ellipseOne}></div>
-        <div className={styles.ellipseTwo}></div>
+        <div className={styles.ellipseOne}>
+          <img
+            src='/public/Ellipse3.png'
+            alt='ellipseOne'
+          />
+        </div>
+        <div className={styles.ellipseTwo}>
+          <img
+            src='/public/Ellipse2.png'
+            alt='ellipseTwo'
+          />
+        </div>
 
         <div className={styles.image}>
           <img
