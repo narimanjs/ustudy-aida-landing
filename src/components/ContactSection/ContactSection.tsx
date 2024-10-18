@@ -9,7 +9,7 @@ const ContactSection = () => {
     >
       <div className={styles.icon}>
         <img
-          src='/question-mark.png'
+          src='/assets/img/question-mark.png'
           alt='Question Icon'
         />
       </div>

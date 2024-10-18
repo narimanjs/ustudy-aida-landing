@@ -7,7 +7,7 @@ const Header = () => {
       <div className={styles.logo}>
         <a href='/'>
           <img
-            src='/UStudy.png'
+            src='/assets/img/UStudy.svg'
             alt='ustudy logo'
           />
         </a>

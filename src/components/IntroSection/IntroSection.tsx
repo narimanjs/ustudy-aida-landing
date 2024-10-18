@@ -23,7 +23,7 @@ const IntroSection = () => {
       </div>
       <div className={styles.image}>
         <img
-          src='/IntroSection.png'
+          src='/assets/img/IntroSection.png'
           alt='Student'
         />
       </div>

@@ -18,16 +18,19 @@
     color: white;
     min-height: 400px;
     &:first-child {
-      background-image: url("/Rectangle203.png");
+      background-image: url("/assets/img/Rectangle203.png");
     }
 
     &:last-child {
-      background-image: url("/Rectangle204.png");
+      background-image: url("/assets/img/Rectangle204.png");
     }
 
     .cardContent {
       border-radius: 10px;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
 
       h2 {
         font-family: "IBM Plex Sans", sans-serif;
@@ -48,7 +51,7 @@
         padding: 0;
       }
       .cardContentP {
-        width: 621px;
+        width: 100%;
       }
       .cardButton {
         button {
@@ -63,6 +66,18 @@
           font-weight: 700;
         }
       }
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .card {
+      width: 100%;
+      height: auto;
+    }
+
+    .cardButton button {
+      width: 100%;
     }
   }
 }

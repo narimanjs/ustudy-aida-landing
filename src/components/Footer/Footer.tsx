@@ -6,7 +6,7 @@ const Footer = () => {
       <div className={styles.leftSection}>
         <div className={styles.logo}>
           <img
-            src='/UStudy_footer.png'
+            src='/assets/img/UStudy_footer.svg'
             alt='ustudy logo'
           />
         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.contacts}>
-          <p>Контакты:</p>
+          <p>Контакты</p>
           <p>Телефон: +7771756585</p>
           <p>Почта: ustudy@mail.ru</p>
         </div>
@@ -37,13 +37,13 @@ const Footer = () => {
         <div className={styles.socials}>
           <a href='https://instagram.com'>
             <img
-              src='/instagram.png'
+              src='/assets/icons/instagram.svg'
               alt='Instagram'
             />
           </a>
           <a href='https://facebook.com'>
             <img
-              src='/facebook.png'
+              src='/assets/icons/facebook.svg'
               alt='Facebook'
             />
           </a>

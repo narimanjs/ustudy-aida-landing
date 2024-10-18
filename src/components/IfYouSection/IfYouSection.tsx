@@ -7,7 +7,7 @@ const IfYouSection = () => {
       <div className={styles.content}>
         <div className={styles.image}>
           <img
-            src='/Frame 511.png'
+            src='/assets/img/Frame 511.png'
             alt='Thinking girl'
           />
         </div>

@@ -9,7 +9,7 @@ const SubjectsSection = () => {
       <div className={styles.topSection}>
         <div className={styles.imageWrapper}>
           <img
-            src='/ourCourse.png'
+            src='/assets/img/ourCourse.png'
             alt='Student learning'
           />
           <div className={styles.imageText}>
@@ -20,15 +20,15 @@ const SubjectsSection = () => {
         <div className={styles.sideCards}>
           <div className={styles.card}>
             <img
-              src='/mathematics.png'
-              alt='Математическая грамотность'
+              src='/assets/img/mathematics.png'
+              alt='Matmatics'
             />
             <div className={styles.cardText}>Математическая грамотность</div>
           </div>
           <div className={styles.card}>
             <img
-              src='/Reading.png'
-              alt='Грамотность чтения'
+              src='/assets/img/Reading.png'
+              alt='Gramar reading'
             />
             <div className={styles.cardText}>Грамотность чтения</div>
           </div>
@@ -38,22 +38,22 @@ const SubjectsSection = () => {
       <div className={styles.bottomSection}>
         <div className={styles.card}>
           <img
-            src='/biology.png'
-            alt='Биология'
+            src='/assets/img/biology.png'
+            alt='Biology'
           />
           <div className={styles.cardText}>Биология</div>
         </div>
         <div className={styles.card}>
           <img
-            src='/chemistry.png'
-            alt='Химия'
+            src='/assets/img/chemistry.png'
+            alt='Chemistry'
           />
           <div className={styles.cardText}>Химия</div>
         </div>
         <div className={styles.card}>
           <img
-            src='/history.png'
-            alt='История Казахстана'
+            src='/assets/img/history.png'
+            alt='History of Kazakhstan'
           />
           <div className={styles.cardText}>История Казахстана</div>
         </div>

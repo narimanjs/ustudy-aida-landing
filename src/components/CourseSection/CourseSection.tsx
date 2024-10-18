@@ -6,26 +6,26 @@ const CourseSection = () => {
     <section className={styles.courseSection}>
       <span className={styles.flask1}>
         <img
-          src='/beaker_5011372 1.png'
+          src='/assets/img/beaker_5011372 1.png'
           alt='tube'
         />
       </span>
       <div className={styles.imageWrapper}>
         <img
-          src='/Course.png'
+          src='/assets/img/Course.png'
           alt='Student'
         />
       </div>
       <span className={styles.flask2}>
         <img
-          src='/flask_1448877 1.png'
+          src='/assets/img/flask_1448877 1.png'
           alt='tube'
         />
       </span>
       <div className={styles.courseContent}>
         <span className={styles.tube}>
           <img
-            src='/Test tube with red liquid for chemistry lessons 3D illustration 1.png'
+            src='/assets/img/Test tube with red liquid for chemistry lessons 3D illustration 1.png'
             alt='tube'
           />
         </span>
@@ -45,7 +45,7 @@ const CourseSection = () => {
         </div>
         <span className={styles.microbe}>
           <img
-            src='/microbe_8186946 1.png'
+            src='/assets/img/microbe_8186946 1.png'
             alt='microbe'
           />
         </span>

@@ -10,7 +10,7 @@ const AdvantagesSection = () => {
       <div className={styles.content}>
         <div className={styles.image}>
           <img
-            src='/AdvantagesSection.png'
+            src='/assets/img/AdvantagesSection.png'
             alt='Working on laptop'
           />
         </div>
