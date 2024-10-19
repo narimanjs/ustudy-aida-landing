@@ -7,17 +7,17 @@ const FormComponent: React.FC = () => {
   const validationSchema = Yup.object({
     lastName: Yup.string()
       .min(2, "Фамилия должна содержать минимум два символа")
-      .required("Обязательно"),
+      .required("Необходимо обязательно заполнить поле "),
     firstName: Yup.string()
       .min(2, "Имя должно содержать минимум 2 символа")
-      .required("Обязательно"),
+      .required("Необходимо обязательно заполнить поле"),
     phone: Yup.string()
       .matches(
         /^(\+?\d{1,4}[-.\s]?|)?\(?\d{1,4}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/,
         "Неверный формат номера"
       )
-      .required("Обязательно"),
-    subject: Yup.string().required("Обязательно выбрать предмет"),
+      .required("Необходимо обязательно заполнить поле "),
+    subject: Yup.string().required("Необходимо обязательно выбрать предмет"),
   });
 
   return (
@@ -40,7 +40,7 @@ const FormComponent: React.FC = () => {
           setSubmitting(false);
         }}
       >
-        {({ isSubmitting }) => (
+        {({ isSubmitting, isValid, dirty }) => (
           <Form>
             <div className={styles.formGroup}>
               <label htmlFor='lastName'>Фамилия:</label>
@@ -105,7 +105,7 @@ const FormComponent: React.FC = () => {
             <div className={styles.buttonGroup}>
               <button
                 type='submit'
-                disabled={isSubmitting}
+                disabled={isSubmitting || !(isValid && dirty)}
               >
                 Отправить
               </button>
