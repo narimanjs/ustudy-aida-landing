@@ -53,7 +53,7 @@ const Header: React.FC = () => {
         isOpen={isModalOpen}
         onClose={closeModal}
       >
-        <Form />
+        <Form onClose={closeModal} />
       </Modal>
     </>
   );

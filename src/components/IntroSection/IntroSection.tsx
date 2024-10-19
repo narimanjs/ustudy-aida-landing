@@ -44,7 +44,7 @@ const IntroSection = () => {
         isOpen={isModalOpen}
         onClose={closeModal}
       >
-        <Form />
+        <Form onClose={closeModal} />
       </Modal>
     </section>
   );

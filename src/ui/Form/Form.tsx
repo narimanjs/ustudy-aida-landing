@@ -1,9 +1,12 @@
-import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import styles from "./Form.module.scss";
 
-const FormComponent: React.FC = () => {
+interface FormComponentProps {
+  onClose: () => void;
+}
+
+const FormComponent = ({ onClose }: FormComponentProps) => {
   const validationSchema = Yup.object({
     lastName: Yup.string()
       .min(2, "Фамилия должна содержать минимум два символа")
@@ -38,6 +41,7 @@ const FormComponent: React.FC = () => {
                   Предмет: ${values.subject}
                   Дата отправки: ${currentDate}`);
           setSubmitting(false);
+          onClose(); // Закрытие модального окна после успешной отправки
         }}
       >
         {({ isSubmitting, isValid, dirty }) => (
