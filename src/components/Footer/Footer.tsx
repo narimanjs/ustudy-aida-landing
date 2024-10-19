@@ -5,10 +5,27 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
         <div className={styles.logo}>
-          <img
-            src='/assets/img/UStudy_footer.svg'
-            alt='ustudy logo'
-          />
+          <a href='/'>
+            <img
+              src='/assets/img/UStudy_footer.svg'
+              alt='ustudy logo'
+            />
+          </a>
+        </div>
+
+        <div className={styles.socials}>
+          <a href='https://instagram.com'>
+            <img
+              src='/assets/icons/instagram.svg'
+              alt='Instagram'
+            />
+          </a>
+          <a href='https://facebook.com'>
+            <img
+              src='/assets/icons/facebook.svg'
+              alt='Facebook'
+            />
+          </a>
         </div>
       </div>
 
@@ -34,20 +51,6 @@ const Footer = () => {
       </div>
 
       <div className={styles.copyright}>
-        <div className={styles.socials}>
-          <a href='https://instagram.com'>
-            <img
-              src='/assets/icons/instagram.svg'
-              alt='Instagram'
-            />
-          </a>
-          <a href='https://facebook.com'>
-            <img
-              src='/assets/icons/facebook.svg'
-              alt='Facebook'
-            />
-          </a>
-        </div>
         <p>Company 2024 all rights reserved</p>
       </div>
     </footer>

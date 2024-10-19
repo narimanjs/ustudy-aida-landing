@@ -1,7 +1,19 @@
-import Button from "../Button/Button";
+import { useState } from "react";
 import styles from "./FutureSection.module.scss";
+import Button from "#/ui/Button/Button";
+import Modal from "#/ui/Modal/Modal";
+import Form from "#/ui/Form/Form";
 
 const FutureSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <section className={styles.futureSection}>
       <div className={styles.card}>
@@ -26,10 +38,17 @@ const FutureSection = () => {
               text='Получить консультацию'
               color='primary'
               size={""}
+              onClick={openModal}
             />
           </div>
         </div>
       </div>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+      >
+        <Form />
+      </Modal>
     </section>
   );
 };

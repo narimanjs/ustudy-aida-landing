@@ -13,6 +13,11 @@
   .logo img {
     width: 188px;
     height: 58px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    &:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
   }
 
   .nav {
@@ -32,6 +37,10 @@
         font-size: 24px;
         line-height: 29px;
         margin-right: 15.5px;
+        transition: transform 0.5s ease, filter 0.5s ease;
+        &:hover {
+          color: #2632dc;
+        }
       }
     }
   }
@@ -43,7 +52,6 @@
     button {
       width: 219px;
       height: 60px;
-      background-color: #3b46e0;
       font-family: IBM Plex Sans;
       font-weight: 700;
       font-size: 18px;
@@ -52,10 +60,17 @@
       border-radius: 30px;
       border: none;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.5s ease, box-shadow 0.7s ease;
 
       &:hover {
-        opacity: 0.9;
+        background-color: #2f38b8;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+        transform: none;
+      }
+
+      &:active {
+        background-color: #242a88;
+        box-shadow: none;
       }
     }
   }

@@ -1,7 +1,19 @@
+import { useState } from "react";
 import styles from "./CourseSection.module.scss";
-import Button from "../Button/Button";
+import Button from "#/ui/Button/Button";
+import Modal from "#/ui/Modal/Modal";
+import Form from "#/ui/Form/Form";
 
 const CourseSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <section className={styles.courseSection}>
       <span className={styles.flask1}>
@@ -54,9 +66,16 @@ const CourseSection = () => {
             text='Записаться на курс'
             color='primary'
             size={""}
+            onClick={openModal}
           />
         </div>
       </div>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+      >
+        <Form />
+      </Modal>
     </section>
   );
 };
