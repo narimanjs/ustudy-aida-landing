@@ -1,19 +1,11 @@
 import styles from "./ContactSection.module.scss";
 import Button from "../../ui/Button/Button";
-import { useState } from "react";
 import Modal from "#/ui/Modal/Modal";
 import Form from "#/ui/Form/Form";
+import useModal from "#/utils/hooks/useModal";
 
 const ContactSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <section
       className={styles.contactSection}

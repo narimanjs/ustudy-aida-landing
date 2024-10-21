@@ -1,0 +1,17 @@
+.icon {
+  color: #3b46e0;
+  text-decoration: none;
+
+  svg {
+    fill: currentColor;
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    color: #ff5733;
+  }
+
+  &:visited {
+    color: #3b46e0;
+  }
+}

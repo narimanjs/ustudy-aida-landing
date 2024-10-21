@@ -1,19 +1,11 @@
-import { useState } from "react";
 import styles from "./CourseSection.module.scss";
 import Button from "#/ui/Button/Button";
 import Modal from "#/ui/Modal/Modal";
 import Form from "#/ui/Form/Form";
+import useModal from "#/utils/hooks/useModal";
 
 const CourseSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <section className={styles.courseSection}>
       <span className={styles.flask1}>

@@ -1,19 +1,11 @@
-import { useState } from "react";
 import styles from "./FutureSection.module.scss";
 import Button from "#/ui/Button/Button";
 import Modal from "#/ui/Modal/Modal";
 import Form from "#/ui/Form/Form";
+import useModal from "#/utils/hooks/useModal";
 
 const FutureSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <section className={styles.futureSection}>
       <div className={styles.card}>

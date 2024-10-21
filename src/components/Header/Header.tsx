@@ -1,29 +1,19 @@
-import React, { useState } from "react";
 import styles from "./Header.module.scss";
-import Button from "../../ui/Button/Button";
-import Modal from "../../ui/Modal/Modal";
-import Form from "../../ui/Form/Form";
+import Button from "#/ui/Button/Button";
+import Modal from "#/ui/Modal/Modal";
+import Form from "#/ui/Form/Form";
+import MyIcon from "#/ui/MyIcon/MyIcon";
+import useModal from "#/utils/hooks/useModal";
 
-const Header: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+const Header = () => {
+  const { isModalOpen, openModal, closeModal } = useModal();
 
   return (
     <>
       <header className={styles.header}>
         <div className={styles.logo}>
           <a href='/'>
-            <img
-              src='/assets/img/UStudy.svg'
-              alt='ustudy logo'
-            />
+            <MyIcon />
           </a>
         </div>
         <nav className={styles.nav}>

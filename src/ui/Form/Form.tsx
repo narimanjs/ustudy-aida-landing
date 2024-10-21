@@ -41,7 +41,7 @@ const FormComponent = ({ onClose }: FormComponentProps) => {
                   Предмет: ${values.subject}
                   Дата отправки: ${currentDate}`);
           setSubmitting(false);
-          onClose(); // Закрытие модального окна после успешной отправки
+          onClose();
         }}
       >
         {({ isSubmitting, isValid, dirty }) => (
