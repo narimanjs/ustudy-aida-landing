@@ -14,13 +14,21 @@ const Footer = () => {
         </div>
 
         <div className={styles.socials}>
-          <a href='https://instagram.com'>
+          <a
+            href='https://www.instagram.com/ustudykazakhstan/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img
               src='/assets/icons/instagram.svg'
               alt='Instagram'
             />
           </a>
-          <a href='https://facebook.com'>
+          <a
+            href='https://facebook.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img
               src='/assets/icons/facebook.svg'
               alt='Facebook'
