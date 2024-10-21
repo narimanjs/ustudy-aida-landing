@@ -1,11 +1,12 @@
 import styles from "./ContactSection.module.scss";
 import Button from "../../ui/Button/Button";
-import Modal from "#/ui/Modal/Modal";
-import Form from "#/ui/Form/Form";
-import useModal from "#/utils/hooks/useModal";
+// import Modal from "#/ui/Modal/Modal";
+// import Form from "#/ui/Form/Form";
+// import useModal from "#/utils/hooks/useModal";
 
 const ContactSection = () => {
-  const { isModalOpen, openModal, closeModal } = useModal();
+  // Закомментил модалку, так как она не нужна для лендинга
+  // const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <section
       className={styles.contactSection}
@@ -20,20 +21,26 @@ const ContactSection = () => {
       <div className={styles.content}>
         <h2>У вас остались вопросы? Напишите нам!</h2>
         <div className={styles.contactButton}>
-          <Button
-            text='Связаться с нами'
-            color='primary'
-            size={""}
-            onClick={openModal}
-          />
+          <a
+            href='https://wa.me/77001400505'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Button
+              text='Связаться с нами'
+              color='primary'
+              size={""}
+              // onClick={openModal}
+            />
+          </a>
         </div>
       </div>
-      <Modal
+      {/* <Modal
         isOpen={isModalOpen}
         onClose={closeModal}
       >
         <Form onClose={closeModal} />
-      </Modal>
+      </Modal> */}
     </section>
   );
 };

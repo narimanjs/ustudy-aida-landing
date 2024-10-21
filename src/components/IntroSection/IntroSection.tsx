@@ -1,11 +1,12 @@
 import styles from "./IntroSection.module.scss";
 import Button from "#/ui/Button/Button";
-import Modal from "#/ui/Modal/Modal";
-import Form from "#/ui/Form/Form";
-import useModal from "#/utils/hooks/useModal";
+// import Modal from "#/ui/Modal/Modal";
+// import Form from "#/ui/Form/Form";
+// import useModal from "#/utils/hooks/useModal";
 
 const IntroSection = () => {
-  const { isModalOpen, openModal, closeModal } = useModal();
+  // Закомментил модалку, так как она не нужна для лендинга
+  // const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <section className={styles.introSection}>
       <div className={styles.content}>
@@ -18,12 +19,18 @@ const IntroSection = () => {
           — составляют один курс!
         </p>
         <div className={styles.contentButton}>
-          <Button
-            text='Записаться на курс'
-            color='primary'
-            size={""}
-            onClick={openModal}
-          />
+          <a
+            href='https://wa.me/77001400505'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Button
+              text='Записаться на курс'
+              color='primary'
+              size={""}
+              // onClick={openModal}
+            />
+          </a>
         </div>
       </div>
       <div className={styles.image}>
@@ -32,12 +39,12 @@ const IntroSection = () => {
           alt='Student'
         />
       </div>
-      <Modal
+      {/* <Modal
         isOpen={isModalOpen}
         onClose={closeModal}
       >
         <Form onClose={closeModal} />
-      </Modal>
+      </Modal> */}
     </section>
   );
 };

@@ -1,11 +1,12 @@
 import styles from "./CourseSection.module.scss";
 import Button from "#/ui/Button/Button";
-import Modal from "#/ui/Modal/Modal";
-import Form from "#/ui/Form/Form";
-import useModal from "#/utils/hooks/useModal";
+// import Modal from "#/ui/Modal/Modal";
+// import Form from "#/ui/Form/Form";
+// import useModal from "#/utils/hooks/useModal";
 
 const CourseSection = () => {
-  const { isModalOpen, openModal, closeModal } = useModal();
+  // Закомментил модалку, так как она не нужна для лендинга
+  // const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <section className={styles.courseSection}>
       <span className={styles.flask1}>
@@ -54,20 +55,26 @@ const CourseSection = () => {
           />
         </span>
         <div className={styles.contactButton}>
-          <Button
-            text='Записаться на курс'
-            color='primary'
-            size={""}
-            onClick={openModal}
-          />
+          <a
+            href='https://wa.me/77001400505'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Button
+              text='Записаться на курс'
+              color='primary'
+              size={""}
+              // onClick={openModal}
+            />
+          </a>
         </div>
       </div>
-      <Modal
+      {/* <Modal
         isOpen={isModalOpen}
         onClose={closeModal}
       >
         <Form onClose={closeModal} />
-      </Modal>
+      </Modal> */}
     </section>
   );
 };
