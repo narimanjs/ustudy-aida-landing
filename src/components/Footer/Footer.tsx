@@ -45,8 +45,12 @@ const Footer = () => {
         </div>
         <div className={styles.contacts}>
           <p>Контакты</p>
-          <p>Телефон: +7771756585</p>
-          <p>Почта: ustudy@mail.ru</p>
+          <p>
+            Телефон: <a href='tel:+77001400505'>+7 (700) 140 05 05 </a>
+          </p>
+          <p>
+            Почта: <a href='mailto:info@ustudy.kz'> info@ustudy.kz</a>
+          </p>
         </div>
       </div>
 
